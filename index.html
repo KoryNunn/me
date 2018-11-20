@@ -30,9 +30,40 @@
             a{
                 color: #33AAFF;
             }
+            hr{
+                max-width: 300px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
 
             .wrapper{
                 padding: 20px;
+            }
+
+            .reviews{
+                display: inline-flex;
+                flex-flow: row wrap;
+                margin: auto;
+                justify-content: space-around;
+            }
+            .reviews p{
+                display: inline-flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                margin: auto;
+                text-align: left;
+                padding: 20px;
+                margin: 10px;
+                background: rgba(255, 255, 255, 0.5);
+            }
+            .reviews p img{
+                margin-bottom: 10px;
+                display: block;
+                flex: none;
+            }
+            .reviews .reviewer{
+                display: block;
+                margin-top: autp;
             }
         </style>
     </head>
@@ -50,15 +81,43 @@
 
             <p>If you want to yell at me, I'm on twitter: <a href="http://twitter.com/korynunn">@korynunn</a></p>
 
+            <hr />
+
             <h3>Recruiters etc.</h3>
             <p>I'd rather not communicate on LinkedIn, please contact me via twitter after checking out my work on github and npm.</p>
+
+            <hr />
             <h3>100% not sarcastic reviews:</h3>
-            <p>"a pretty massive JS nerd" - luigi</p>
-            <p><img src="S1W.PNG" /> - <a href="https://twitter.com/adam__brady">s1w</a></p>
-            <p><img src="Screenshot_2018_01_08_12_11_02.png" /> - <a href="https://twitter.com/ButlerMaurice">ButlerMaurice</a></p>
-            <p><img src="ojame.png" /> - <a href="https://twitter.com/_ojame">ojame</a></p>
-            <p>
-            <p><img src="realreview.PNG" /> - JamesDines</p>
+            <div class="reviews">
+                <p>
+                    <img src="S1W.PNG" />
+                    <span class="reviewer">
+                        <a href="https://twitter.com/adam__brady">s1w</a>
+                    </span>
+                </p>
+
+                <p>
+                    <img src="Screenshot_2018_01_08_12_11_02.png" />
+                    <span class="reviewer">
+                        <a href="https://twitter.com/ButlerMaurice">ButlerMaurice</a>
+                    </span>
+                </p>
+
+                <p>
+                    <img src="ojame.png" />
+                    <span class="reviewer">
+                        <a href="https://twitter.com/_ojame">ojame</a>
+                    </span>
+                </p>
+
+                <p>
+                    <img src="realreview.PNG" />
+                    <span class="reviewer">JamesDines</span>
+                </p>
+            </div>
+
+            <hr />
+
             <h3>Support me on Patreon for some reason:</h3>
             <p><a href="https://www.patreon.com/korynunn/">patreon.com/korynunn</a></p>
         </div>
