@@ -40,32 +40,54 @@
                 padding: 20px;
             }
 
+            .reviewsContainer{
+                display: inline-flex;
+                position: relative;
+                margin-right: -20px;
+            }
+            .reviewsContainer:after{
+                content:"";
+                position: absolute;
+                right: 0;
+                top:0;
+                height: 210px;
+                width: 20px;
+                pointer-events: none;
+                background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #DDD 100%);
+            }
             .reviews{
                 display: inline-flex;
-                flex-flow: row wrap;
                 margin: auto;
-                justify-content: space-around;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-right: 20px;
+                text-align: center;
             }
             .reviews p{
-                display: inline-flex;
-                flex-flow: column wrap;
-                justify-content: space-between;
+                height: 190px;
                 margin: auto;
                 text-align: left;
-                padding: 20px;
                 margin: 10px;
-                background: rgba(255, 255, 255, 0.5);
-                max-width: 300px;
+                background: white;
+                flex: 0 0 350px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
             }
             .reviews p img{
                 margin-bottom: 10px;
                 display: block;
                 flex: none;
-                max-width: 100%;
+                width: 100%;
+            }
+            .reviews p:last-child{
+                margin-right: 20px;
             }
             .reviews .reviewer{
+                padding: 10px;
                 display: block;
                 margin-top: auto;
+                text-align: right;
             }
         </style>
     </head>
@@ -90,47 +112,49 @@
 
             <hr />
             <h3>100% not sarcastic reviews:</h3>
-            <div class="reviews">
-                <p>
-                    <img src="S1W.PNG" />
-                    <span class="reviewer">
-                        <a href="https://twitter.com/adam__brady">s1w</a>
-                    </span>
-                </p>
+            <div class="reviewsContainer">
+                <div class="reviews">
+                    <p>
+                        <img src="S1W.PNG" />
+                        <span class="reviewer">
+                            <a href="https://twitter.com/adam__brady">s1w</a>
+                        </span>
+                    </p>
 
-                <p>
-                    <img src="Screenshot_2018_01_08_12_11_02.png" />
-                    <span class="reviewer">
-                        <a href="https://twitter.com/ButlerMaurice">ButlerMaurice</a>
-                    </span>
-                </p>
+                    <p>
+                        <img src="Screenshot_2018_01_08_12_11_02.png" />
+                        <span class="reviewer">
+                            <a href="https://twitter.com/ButlerMaurice">ButlerMaurice</a>
+                        </span>
+                    </p>
 
-                <p>
-                    <img src="ojame.png" />
-                    <span class="reviewer">
-                        <a href="https://twitter.com/_ojame">ojame</a>
-                    </span>
-                </p>
+                    <p>
+                        <img src="ojame.png" />
+                        <span class="reviewer">
+                            <a href="https://twitter.com/_ojame">ojame</a>
+                        </span>
+                    </p>
 
-                <p>
-                    <img src="realreview.PNG" />
-                    <span class="reviewer">JamesDinnes</span>
-                </p>
+                    <p>
+                        <img src="realreview.PNG" />
+                        <span class="reviewer">JamesDinnes</span>
+                    </p>
 
-                <p>
-                    <img src="valstorm-non-sarcastic-review.png" />
-                    <span class="reviewer">
-                        <a href="https://twitter.com/valstorm">Valstorm</a>
-                    </span>
-                </p>
+                    <p>
+                        <img src="valstorm-non-sarcastic-review.png" />
+                        <span class="reviewer">
+                            <a href="https://twitter.com/valstorm">Valstorm</a>
+                        </span>
+                    </p>
 
-                <p>
-                    <img src="Screenshot_20190315-104449~2.png" />
-                    <span class="reviewer">
-                        <a href="https://twitter.com/codeandwhiskey">Michael Zaporozhets</a>
-                    </span>
-                </p>
-                
+                    <p>
+                        <img src="Screenshot_20190315-104449~2.png" />
+                        <span class="reviewer">
+                            <a href="https://twitter.com/codeandwhiskey">Michael Zaporozhets</a>
+                        </span>
+                    </p>
+                    .
+                </div>
             </div>
 
             <hr />
