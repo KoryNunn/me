@@ -1,0 +1,25 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-local": "static -a 0.0.0.0 -p 8080",
+    "start": "static -a 0.0.0.0 -p 80"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korynunn/me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korynunn/me/issues"
+  },
+  "homepage": "https://github.com/korynunn/me#readme",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}
